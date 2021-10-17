@@ -108,6 +108,8 @@ a {
   margin: 0px;
   vertical-align: middle;
   height: 2em;
+  border-radius: 5px;
+  border: 1px solid #1a1a1a;
 }
 
 nav {
@@ -142,7 +144,7 @@ nav {
 }
 
 #bioLogo {
-  background-color: #ccc;
+  background-color: #1a1a1a;
   width: 100%;
   margin: 0px;
 }
