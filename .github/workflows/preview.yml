@@ -1,0 +1,63 @@
+name: Preview Build
+on:
+  push:
+    branches:
+    - dev/*
+permissions: write-all
+jobs:
+  copypreview:
+    name: Copy dev branch to published branch docs/preview subdirectory
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout dev
+      uses: actions/checkout@v2
+      with:
+        path: branchdev
+    - name: checkout p18d
+      uses: actions/checkout@v2
+      with:
+        ref: published
+        path: branchpublished
+    - name: copy published
+      run: |
+        mkdir -p temp/docs/preview
+        cp -r -v branchpublished/* temp/
+      shell: bash
+    - name: copy dev
+      run: |
+        branch=${{ github.ref }}
+        branchname=$(echo "$branch" | sed "s/refs\/heads\///")
+        dest_path="temp/docs/"
+        dest_path+="$branchname"
+        mkdir -p temp2
+        mkdir -p $dest_path
+        cp -r -v branchdev/docs/* temp2/
+        cp -r -v temp2/* $dest_path
+      shell: bash
+    - name: echo & ls
+      run: |
+        echo "cd temp"
+        cd temp
+        echo "ls"
+        echo "*****"
+        ls
+        echo "***************"
+        echo "cd temp/docs"
+        cd docs
+        echo "ls"
+        echo "*****"
+        ls
+        echo "***************"
+        echo "cd temp/docs/preview"
+        cd preview
+        echo "ls"
+        echo "*****"
+        ls
+      shell: bash
+    - name: git-publish-subdir
+      uses: s0/git-publish-subdir-action@develop
+      env:
+        REPO: self
+        BRANCH: published
+        FOLDER: temp
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
