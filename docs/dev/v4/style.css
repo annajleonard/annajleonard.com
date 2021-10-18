@@ -1,3 +1,21 @@
+:root {
+  --darkBkd: #1a1a1a;
+  --logoDark: #4346A7;
+  --logoLight: #D3F6F2;
+  --white: #ffffff;
+  --pageBkd: var(--darkBkd);
+  --hdrBkd: var(--logoDark);
+  --logoBdr: var(--darkBkd);
+  --navBkd: var(--logoLight);
+  --navLink: var(--logoLight);
+  --navLinkA: var(--logoLight);
+  --navBkdA: var(--darkBkd);
+  --navBtmBrd: var(--darkBkd);
+  --prflBkd: var(--logoDark);
+  --prflText: var(--logoLight);
+  --ftrText: var(--white);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -23,7 +41,7 @@ nav {
 
 body,
 html {
-  background-color: #1a1a1a;
+  background-color: var(--pageBkd);
   height: 100%;
   position: relative;
 }
@@ -36,7 +54,7 @@ body {
 
 header {
   display: block;
-  background: #fff;
+  background: var(--hdrBkd);
   padding: 0px;
   margin: auto;
   width: 100%;
@@ -88,7 +106,7 @@ a {
   max-width: 1000px;
   margin: 0px auto;
   padding: 0px;
-  }
+}
 
 .nav-flex-container {
   display: flex;
@@ -109,7 +127,7 @@ a {
   vertical-align: middle;
   height: 2em;
   border-radius: 8px;
-  border: 1px solid #1a1a1a;
+  border: 1px solid var(--logoBdr);
 }
 
 nav {
@@ -128,12 +146,16 @@ nav {
   letter-spacing: .45rem;
   display: block;
   padding: 1em;
-  color: #1a1a1a;
+  color: var(--navLink);
+  border-top: 3px solid var(--logoDark);
+  border-bottom: 3px solid var(--logoDark);
 }
 
 .navigation a:hover {
-  background: #1a1a1a;
-  color: #fff;
+  color: var(--navLinkA);
+  background: var(--navBkdA);
+  border-top: 3px solid var(--darkBkd);
+  border-bottom: 3px solid var(--logoLight);
 }
 
 #bioLogoContainer {
@@ -144,7 +166,7 @@ nav {
 }
 
 #bioLogo {
-  background-color: #1a1a1a;
+  background-color: var(--pageBkd);
   width: 100%;
   margin: 0px;
   padding: 0px;
@@ -249,7 +271,8 @@ nav {
 }
 
 .portfolioContainer>h1 {
-  background-color: #fff;
+  background-color: var(--prflBkd);
+  color: var(--prflText);
   padding: 10px;
   font-size: xx-large;
   max-width: 1000px;
@@ -284,7 +307,7 @@ h1+img {
 
 footer {
   display: block;
-  color: #fff;
+  color: var(--ftrText);
   max-width: 1000px;
   clear: both;
   width: 100%;
