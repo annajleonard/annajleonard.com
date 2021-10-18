@@ -84,16 +84,6 @@ a {
   flex: 50%;
 }
 
-@media (max-width: 800px) {
-
-  .flex-item-right,
-  .flex-item-left,
-  .nav-flex-left,
-  .nav-flex-right {
-    flex: 100%;
-  }
-}
-
 .nav-flex-left {
   flex: 30%;
 }
@@ -241,6 +231,7 @@ nav {
   border: double 5px gray;
   font-size: 25px;
   display: none;
+  color: #000;
 }
 
 .acrylicContainer:hover>a>#acrylicsText,
@@ -266,7 +257,7 @@ nav {
 
 .portfolioContainer {
   margin: auto;
-  padding: 0px;
+  padding: 25px 0px 0px 0px;
   float: center;
 }
 
@@ -324,6 +315,30 @@ footer p {
 }
 
 /* *********** media queries *********** */
+
+@media (max-width: 800px) {
+  .flex-item-right,
+  .flex-item-left,
+  .nav-flex-left,
+  .nav-flex-right {
+    flex: 100%;
+  }
+  .flex-item-right,
+  .flex-item-left {
+    padding: 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  #acrylicsText,
+  #mixedMediaText,
+  #coloredPencilText,
+  #collageText,
+  #photographyText {
+    display: block;
+  }  
+}
+
 @media all and (max-width: 1000px) {
   #logo img {
     margin: 0px 10px;
