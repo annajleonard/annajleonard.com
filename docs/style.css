@@ -152,7 +152,7 @@ nav {
   max-width: 1000px;
   margin: auto;
   border: none;
-  padding: 20px 0px 10px 0px;
+  padding: 25px 0px;
 }
 
 #bioLogo {
@@ -168,7 +168,7 @@ nav {
   border: none;
   height: auto;
   display: block;
-  padding: 10px 0px 10px 0px;
+  padding: 0px;
   clear: both;
 }
 
@@ -257,18 +257,18 @@ nav {
 
 .portfolioContainer {
   margin: auto;
-  padding: 25px 0px 0px 0px;
+  padding: 0px;
   float: center;
 }
 
 .portfolioContainer>h1 {
   background-color: var(--prflBkd);
   color: var(--prflText);
-  padding: 10px;
+  padding: 25px 0px;
   font-size: xx-large;
   max-width: 1000px;
   float: center;
-  margin: 15px auto;
+  margin: 50px auto;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
