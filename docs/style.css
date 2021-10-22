@@ -351,6 +351,24 @@ h1+img {
   top: 0;
 }
 
+.bioContent {
+  max-width: 500px;
+  margin: auto;
+  padding: 0px;
+  float: center;  
+}
+
+.bioContent>p {
+  color: #fff;
+  padding: 5px 0px 50px 0px;
+  font-size: medium;
+  max-width: 1000px;
+  height: auto;
+  margin: 0px;
+  top: 0;
+  text-align: left;
+}
+
 footer {
   display: block;
   color: var(--ftrText);
