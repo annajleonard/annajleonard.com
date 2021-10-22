@@ -1,5 +1,5 @@
 :root {
-  --darkBkd: #1a1a1a;
+  --darkBkd: #18171c;
   --logoDark: #4346A7;
   --logoLight: #D3F6F2;
   --white: #ffffff;
@@ -277,14 +277,14 @@ nav {
 }
 
 .portfolio-group-container>a {
-  margin: 25px;
+  margin: 0px 25px;
   text-decoration: none;
 }
 
 .portfolio-group-container>a>h1 {
   max-width: 100%;
   padding: 5px 0px;
-  margin: 0px 5px 25px 5px;
+  margin: 25px 5px;
   display: flex;
   align-items: center;
   justify-content: center;
