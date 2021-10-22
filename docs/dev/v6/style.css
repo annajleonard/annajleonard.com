@@ -1,0 +1,387 @@
+:root {
+  --darkBkd: #1a1a1a;
+  --logoDark: #4346A7;
+  --logoLight: #D3F6F2;
+  --white: #ffffff;
+  --pageBkd: var(--darkBkd);
+  --hdrBkd: var(--logoDark);
+  --logoBdr: var(--darkBkd);
+  --navBkd: var(--logoLight);
+  --navLink: var(--logoLight);
+  --navLinkA: var(--logoLight);
+  --navBkdA: var(--darkBkd);
+  --navBtmBrd: var(--darkBkd);
+  --prflBkd: var(--logoDark);
+  --prflText: var(--logoLight);
+  --ftrText: var(--white);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+div,
+p,
+img,
+ul,
+li,
+footer,
+header,
+nav {
+  padding: 0px;
+  border: 0px;
+  outline: 0px;
+  font-size: 100%;
+  background: transparent;
+}
+
+body,
+html {
+  background-color: var(--pageBkd);
+  height: 100%;
+  position: relative;
+}
+
+body {
+  font-family: Arial;
+  margin: auto;
+  padding: 0px;
+}
+
+header {
+  display: block;
+  background: var(--hdrBkd);
+  padding: 0px;
+  margin: auto;
+  width: 100%;
+}
+
+a {
+  margin: 0px;
+  padding: 0px;
+  font-size: 100%;
+  background: transparent;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.flex-item-left {
+  padding: 0px 15px 0px 0px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  padding: 0px 0px 0px 15px;
+  padding: 0px;
+  flex: 50%;
+}
+
+.nav-flex-left {
+  flex: 30%;
+}
+
+.nav-flex-right {
+  flex: 70%;
+}
+
+#navContainer {
+  max-width: 1000px;
+  margin: 0px auto;
+  padding: 0px;
+}
+
+.nav-flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  display: flex;
+  vertical-align: middle;
+  float: left;
+  margin: 0px;
+}
+
+#logo img {
+  display: flex;
+  margin: 0px;
+  vertical-align: middle;
+  height: 2em;
+  border-radius: 8px;
+  border: 1px solid var(--logoBdr);
+}
+
+nav {
+  display: inline-block;
+  float: right;
+}
+
+.navigation {
+  list-style: none;
+  /* text-transform: uppercase; */
+  display: flex;
+}
+
+.navigation a {
+  text-decoration: none;
+  letter-spacing: .45rem;
+  display: block;
+  padding: 1em;
+  color: var(--navLink);
+  border-top: 3px solid var(--logoDark);
+  border-bottom: 3px solid var(--logoDark);
+}
+
+.navigation a:hover {
+  color: var(--navLinkA);
+  background: var(--navBkdA);
+  border-top: 3px solid var(--darkBkd);
+  border-bottom: 3px solid var(--logoLight);
+}
+
+#bioLogoContainer {
+  max-width: 1000px;
+  margin: auto;
+  border: none;
+  padding: 25px 0px;
+}
+
+#bioLogo {
+  background-color: var(--pageBkd);
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+#pageContent {
+  max-width: 1000px;
+  margin: auto;
+  border: none;
+  height: auto;
+  display: block;
+  padding: 0px;
+  clear: both;
+}
+
+.acrylicContainer,
+.mixedMediaContainer {
+  position: relative;
+  left: 0;
+  top: 0;
+  text-align: center;
+  padding: 0px 0px 15px 0px;
+}
+
+#acrylicsImage {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#mixedMediaImage {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.coloredPencilContainer,
+.collageContainer,
+.photographyContainer {
+  position: relative;
+  left: 0;
+  top: 0;
+  text-align: center;
+  padding: 0px 0px 15px 0px;
+}
+
+#coloredPencilImage {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#collageImage {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#photographyImage {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#acrylicsText,
+#mixedMediaText,
+#coloredPencilText,
+#collageText,
+#photographyText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 15px;
+  margin: 5px;
+  border: double 5px gray;
+  font-size: 25px;
+  display: none;
+  color: #000;
+}
+
+.acrylicContainer:hover>a>#acrylicsText,
+.mixedMediaContainer:hover>a>#mixedMediaText,
+.coloredPencilContainer:hover>a>#coloredPencilText,
+.collageContainer:hover>a>#collageText,
+.photographyContainer:hover>a>#photographyText {
+  display: block;
+}
+
+.acrylicContainer:hover,
+.mixedMediaContainer:hover,
+.coloredPencilContainer:hover,
+.collageContainer:hover,
+.photographyContainer:hover {
+  transform: scale(1.03);
+}
+
+.flex-item-center {
+  padding: 0px 0px 0px 0px;
+  flex: 100%;
+}
+
+.portfolioContainer {
+  margin: auto;
+  padding: 0px;
+  float: center;
+}
+
+.portfolioContainer>h1 {
+  background-color: var(--prflBkd);
+  color: var(--prflText);
+  padding: 25px 0px;
+  font-size: xx-large;
+  max-width: 1000px;
+  float: center;
+  margin: 50px auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.portfolioContainer>img {
+  border: solid 2px #f1f1f1;
+  margin: 25px auto 0px auto;
+  max-width: 1000px;
+  width: 100%;
+  float: center;
+}
+
+h1+img {
+  margin: 25px;
+}
+
+.portfolioContainer>p {
+  color: #fff;
+  padding: 5px 0px 50px 0px;
+  font-size: medium;
+  max-width: 1000px;
+  height: auto;
+  margin: 0px;
+  top: 0;
+}
+
+footer {
+  display: block;
+  color: var(--ftrText);
+  max-width: 1000px;
+  clear: both;
+  width: 100%;
+  margin: auto;
+}
+
+footer p {
+  padding: 0px 0px 25px 0px;
+  margin: 0px;
+  width: 100%;
+  max-width: 1000px;
+  text-align: right;
+  float: right;
+}
+
+/* *********** media queries *********** */
+
+@media (max-width: 800px) {
+  .flex-item-right,
+  .flex-item-left,
+  .nav-flex-left,
+  .nav-flex-right {
+    flex: 100%;
+  }
+  .flex-item-right,
+  .flex-item-left {
+    padding: 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  #acrylicsText,
+  #mixedMediaText,
+  #coloredPencilText,
+  #collageText,
+  #photographyText {
+    display: block;
+  }  
+}
+
+@media all and (max-width: 1000px) {
+  #logo img {
+    margin: 0px 10px;
+  }
+
+  .navigation {
+    margin: 0px 10px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .nav-flex-container {
+    flex-direction: column;
+  }
+
+  #logo img {
+    margin: .25em 0;
+  }
+
+  .navigation {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 400px) {
+  #logo {
+    align-self: left;
+    /* align the logo to the left side of 'flex-container' */
+  }
+
+  .navigation {
+    flex-direction: column;
+  }
+
+  .navigation a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
