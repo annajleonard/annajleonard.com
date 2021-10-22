@@ -255,8 +255,63 @@ nav {
   flex: 100%;
 }
 
+.portfolio-flex-container {
+  max-width: 1000px;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.portfolio-group-container>a,
+.portfolio-group-container {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.portfolio-group-container>a {
+  margin: 25px;
+  text-decoration: none;
+}
+
+.portfolio-group-container>a>h1 {
+  max-width: 100%;
+  padding: 5px 0px;
+  margin: 0px 5px 25px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+  flex-basis: 100%;
+  background-color: var(--prflBkd);
+  color: var(--prflText);
+}
+
+.portfolio-group-container>a>img {
+  max-width: 100%;
+  max-height: 200px;
+  margin: 0px 5px 10px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-group-container>a>p {
+  display: none;
+}
+
 .portfolioContainer {
-  margin: 0px auto;
+  max-width: 1000px;
+  margin: auto;
   padding: 0px;
   float: center;
 }
@@ -276,7 +331,7 @@ nav {
 
 .portfolioContainer>img {
   border: solid 2px #f1f1f1;
-  margin: 25px auto 0px auto;
+  margin: 0px auto;
   max-width: 1000px;
   width: 100%;
   float: center;
