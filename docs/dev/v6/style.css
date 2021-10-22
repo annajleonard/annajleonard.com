@@ -284,7 +284,7 @@ nav {
 .portfolio-group-container>a>h1 {
   max-width: 100%;
   padding: 5px 0px;
-  margin: 25px 5px;
+  margin: 50px 5px 25px 5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -333,7 +333,7 @@ nav {
   border: solid 2px #f1f1f1;
   margin: 0px auto;
   max-width: 1000px;
-  width: 100%;
+  height: 100vh;
   float: center;
 }
 
