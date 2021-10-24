@@ -313,9 +313,7 @@ nav {
   max-width: 1000px;
   margin: 0px;
   padding: 0px;
-  display: flex;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .portfolioContainer>h1 {
@@ -467,7 +465,7 @@ footer p {
   }
 
   .portfolioContainer>img {
-    
+    width: 100%;
   }
 
 }
