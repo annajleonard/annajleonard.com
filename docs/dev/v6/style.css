@@ -362,7 +362,7 @@ h1+img {
 }
 
 .bioContent {
-  max-width: 500px;
+  max-width: 1000px;
   margin: 25px auto;
   padding: 0px;
   height: auto;
@@ -373,6 +373,7 @@ h1+img {
   height: 50vh;
   width: auto;
   float: left;
+  margin: 0px 25px 0px 0px;
 }
 
 .bioContent>p {
