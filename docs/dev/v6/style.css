@@ -348,7 +348,7 @@ nav {
   object-fit: contain;
 }
 
-.portfolioContainer>img>.landscape {
+.portfolioContainer>img.landscape {
   margin: 0px auto;
   max-width: 1000px;
   width: 100%;
