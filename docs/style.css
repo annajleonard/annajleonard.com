@@ -345,6 +345,7 @@ nav {
   max-width: 1000px;
   height: 85vh;
   float: center;
+  object-fit: contain;
 }
 
 h1+img {
@@ -374,6 +375,7 @@ h1+img {
   max-width: 500px;
   height: 50vh;
   float: left;
+  object-fit: contain;
 }
 
 .bioContent>p {
