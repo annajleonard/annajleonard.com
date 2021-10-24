@@ -1,5 +1,5 @@
 :root {
-  --darkBkd: #1a1a1a;
+  --darkBkd: #18171c;
   --logoDark: #4346A7;
   --logoLight: #D3F6F2;
   --white: #ffffff;
@@ -191,7 +191,7 @@ nav {
   max-height: 100%;
 }
 
-.coloredPencilContainer,
+.colorPencilContainer,
 .collageContainer,
 .photographyContainer {
   position: relative;
@@ -201,7 +201,7 @@ nav {
   padding: 0px 0px 15px 0px;
 }
 
-#coloredPencilImage {
+#colorPencilImage {
   max-width: 100%;
   max-height: 100%;
 }
@@ -218,7 +218,7 @@ nav {
 
 #acrylicsText,
 #mixedMediaText,
-#coloredPencilText,
+#colorPencilText,
 #collageText,
 #photographyText {
   position: absolute;
@@ -236,7 +236,7 @@ nav {
 
 .acrylicContainer:hover>a>#acrylicsText,
 .mixedMediaContainer:hover>a>#mixedMediaText,
-.coloredPencilContainer:hover>a>#coloredPencilText,
+.colorPencilContainer:hover>a>#colorPencilText,
 .collageContainer:hover>a>#collageText,
 .photographyContainer:hover>a>#photographyText {
   display: block;
@@ -244,7 +244,7 @@ nav {
 
 .acrylicContainer:hover,
 .mixedMediaContainer:hover,
-.coloredPencilContainer:hover,
+.colorPencilContainer:hover,
 .collageContainer:hover,
 .photographyContainer:hover {
   transform: scale(1.03);
@@ -255,9 +255,67 @@ nav {
   flex: 100%;
 }
 
+.portfolio-flex-container {
+  max-width: 1000px;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.portfolio-group-container>a,
+.portfolio-group-container {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.portfolio-group-container>a {
+  margin: 0px 25px;
+  text-decoration: none;
+}
+
+.portfolio-group-container>a>h1 {
+  max-width: 100%;
+  padding: 5px 0px;
+  margin: 50px 5px 25px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+  flex-basis: 100%;
+  background-color: var(--prflBkd);
+  color: var(--prflText);
+}
+
+.portfolio-group-container>a>img {
+  max-width: 100%;
+  max-height: 200px;
+  margin: 0px 5px 10px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-group-container>a>p {
+  display: none;
+}
+
 .portfolioContainer {
+  max-width: 1000px;
   margin: auto;
   padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   float: center;
 }
 
@@ -276,9 +334,9 @@ nav {
 
 .portfolioContainer>img {
   border: solid 2px #f1f1f1;
-  margin: 25px auto 0px auto;
+  margin: 0px auto;
   max-width: 1000px;
-  width: 100%;
+  height: 85vh;
   float: center;
 }
 
@@ -296,36 +354,73 @@ h1+img {
   top: 0;
 }
 
+.bioContent {
+  max-width: 500px;
+  margin: 25px auto;
+  padding: 0px;
+  height: auto;
+  float: center;
+}
+
+.bioContent>p {
+  color: #fff;
+  padding: 5px 0px 50px 0px;
+  font-size: 1.5em;
+  max-width: 1000px;
+  height: auto;
+  margin: 0px;
+  top: 0;
+  text-align: left;
+}
+
 footer {
-  display: block;
+  display: inline-blockblock;
   color: var(--ftrText);
   max-width: 1000px;
   clear: both;
   width: 100%;
-  margin: auto;
+  margin: 50px auto;
+  position: relative;
+}
+
+footer a {
+  margin: 0px 25px 50% 0px;
+  float: left;
 }
 
 footer p {
-  padding: 0px 0px 25px 0px;
+  padding: 5px 0px;
   margin: 0px;
   width: 100%;
   max-width: 1000px;
-  text-align: right;
+  text-align: left;
   float: right;
 }
 
 /* *********** media queries *********** */
 
 @media (max-width: 800px) {
+  .flex-item-center,
   .flex-item-right,
   .flex-item-left,
   .nav-flex-left,
   .nav-flex-right {
     flex: 100%;
   }
+  .flex-item-center,
   .flex-item-right,
   .flex-item-left {
     padding: 0px;
+  }
+}
+
+@media (hover: none) {
+  #acrylicsText,
+  #mixedMediaText,
+  #coloredPencilText,
+  #collageText,
+  #photographyText {
+    display: block;
   }
 }
 
@@ -362,6 +457,11 @@ footer p {
     width: 100%;
     justify-content: space-around;
   }
+
+  .portfolioContainer>img {
+    height: auto;
+  }
+
 }
 
 @media all and (max-width: 400px) {
