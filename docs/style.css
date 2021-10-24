@@ -433,7 +433,7 @@ footer p {
 @media (hover: none) {
   #acrylicsText,
   #mixedMediaText,
-  #coloredPencilText,
+  #colorPencilText,
   #collageText,
   #photographyText {
     display: block;
@@ -443,7 +443,7 @@ footer p {
 @media (max-width: 600px) {
   #acrylicsText,
   #mixedMediaText,
-  #coloredPencilText,
+  #colorPencilText,
   #collageText,
   #photographyText {
     display: block;
