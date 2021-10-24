@@ -353,15 +353,16 @@ h1+img {
 
 .bioContent {
   max-width: 500px;
-  margin: auto;
+  margin: 25px auto;
   padding: 0px;
-  float: center;  
+  height: auto;
+  float: center;
 }
 
 .bioContent>p {
   color: #fff;
   padding: 5px 0px 50px 0px;
-  font-size: medium;
+  font-size: 1.5em;
   max-width: 1000px;
   height: auto;
   margin: 0px;
@@ -370,20 +371,26 @@ h1+img {
 }
 
 footer {
-  display: block;
+  display: inline-blockblock;
   color: var(--ftrText);
   max-width: 1000px;
   clear: both;
   width: 100%;
-  margin: auto;
+  margin: 50px auto;
+  position: relative;
+}
+
+footer a {
+  margin: 0px 25px 50% 0px;
+  float: left;
 }
 
 footer p {
-  padding: 25px 0px;
+  padding: 5px 0px;
   margin: 0px;
   width: 100%;
   max-width: 1000px;
-  text-align: right;
+  text-align: left;
   float: right;
 }
 
