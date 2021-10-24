@@ -20,6 +20,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Helvetica, sans-serif;
 }
 
 html,
@@ -58,6 +59,10 @@ header {
   padding: 0px;
   margin: auto;
   width: 100%;
+}
+
+h1 {
+  letter-spacing: .45rem;
 }
 
 a {
@@ -225,13 +230,13 @@ nav {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: var(--darkBkd);
   padding: 15px;
   margin: 5px;
-  border: double 5px gray;
   font-size: 25px;
   display: none;
-  color: #000;
+  color: var(--logoLight);
+  letter-spacing: .45rem;
 }
 
 .acrylicContainer:hover>a>#acrylicsText,
@@ -311,29 +316,31 @@ nav {
 
 .portfolioContainer {
   max-width: 1000px;
-  margin: auto;
+  margin: 0px;
   padding: 0px;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  float: center;
 }
 
 .portfolioContainer>h1 {
   background-color: var(--prflBkd);
   color: var(--prflText);
   padding: 25px 0px;
-  font-size: xx-large;
-  max-width: 1000px;
+  font-size: 2em;
+  max-width: 100%;
   float: center;
   margin: 50px auto;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  text-align: center;
+  flex-basis: 100%;
 }
 
 .portfolioContainer>img {
-  border: solid 2px #f1f1f1;
   margin: 0px auto;
   max-width: 1000px;
   height: 85vh;
@@ -355,11 +362,18 @@ h1+img {
 }
 
 .bioContent {
-  max-width: 500px;
+  max-width: 1000px;
   margin: 25px auto;
   padding: 0px;
   height: auto;
   float: center;
+}
+
+.bioContent>img {
+  margin: 0px 25px 25px 0px;
+  max-width: 500px;
+  height: 50vh;
+  float: left;
 }
 
 .bioContent>p {
@@ -384,7 +398,7 @@ footer {
 }
 
 footer a {
-  margin: 0px 25px 50% 0px;
+  margin: 0px 25px 0px 0px;
   float: left;
 }
 
@@ -458,15 +472,16 @@ footer p {
     justify-content: space-around;
   }
 
+  .bioContent>img,
   .portfolioContainer>img {
+    width: 100%;
     height: auto;
   }
-
 }
 
 @media all and (max-width: 400px) {
   #logo {
-    align-self: left;
+    /* align-self: left; */
     /* align the logo to the left side of 'flex-container' */
   }
 
@@ -483,5 +498,10 @@ footer p {
 
   .navigation li:last-of-type a {
     border-bottom: none;
+  }
+
+  footer a {
+    margin: 0px 25px 25px 0px;
+    float: left;
   }
 }
