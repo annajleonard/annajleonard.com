@@ -313,7 +313,10 @@ nav {
   max-width: 1000px;
   margin: auto;
   padding: 0px;
-  float: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .portfolioContainer>h1 {
