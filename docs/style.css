@@ -314,7 +314,6 @@ nav {
   margin: auto;
   padding: 0px;
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -459,7 +458,7 @@ footer p {
   }
 
   .portfolioContainer>img {
-    height: auto;
+    
   }
 
 }
