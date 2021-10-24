@@ -387,7 +387,7 @@ footer {
 }
 
 footer a {
-  margin: 0px 25px 50% 0px;
+  margin: 0px 25px 0px 0px;
   float: left;
 }
 
@@ -465,7 +465,6 @@ footer p {
     width: 100%;
     height: auto;
   }
-
 }
 
 @media all and (max-width: 400px) {
@@ -487,5 +486,10 @@ footer p {
 
   .navigation li:last-of-type a {
     border-bottom: none;
+  }
+
+  footer a {
+    margin: 0px 25px 25px 0px;
+    float: left;
   }
 }
