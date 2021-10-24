@@ -370,10 +370,10 @@ h1+img {
 }
 
 .bioContent>img {
+  margin: 0px 25px 25px 0px;
+  max-width: 500px;
   height: 50vh;
-  width: auto;
   float: left;
-  margin: 0px 25px 0px 0px;
 }
 
 .bioContent>p {
@@ -472,6 +472,7 @@ footer p {
     justify-content: space-around;
   }
 
+  .bioContent>img,
   .portfolioContainer>img {
     width: 100%;
     height: auto;
