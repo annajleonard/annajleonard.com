@@ -313,6 +313,9 @@ nav {
   max-width: 1000px;
   margin: auto;
   padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   float: center;
 }
 
@@ -397,19 +400,30 @@ footer p {
 /* *********** media queries *********** */
 
 @media (max-width: 800px) {
+  .flex-item-center,
   .flex-item-right,
   .flex-item-left,
   .nav-flex-left,
   .nav-flex-right {
     flex: 100%;
   }
+  .flex-item-center,
   .flex-item-right,
   .flex-item-left {
     padding: 0px;
   }
 }
 
-@media (hover: none),
+@media (hover: none) {
+  #acrylicsText,
+  #mixedMediaText,
+  #coloredPencilText,
+  #collageText,
+  #photographyText {
+    display: block;
+  }
+}
+
 @media (max-width: 600px) {
   #acrylicsText,
   #mixedMediaText,
