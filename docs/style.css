@@ -21,7 +21,6 @@
   margin: 0;
   padding: 0;
   font-family: Helvetica, sans-serif;
-  letter-spacing: .45rem;
 }
 
 html,
@@ -60,6 +59,10 @@ header {
   padding: 0px;
   margin: auto;
   width: 100%;
+}
+
+h1 {
+  letter-spacing: .45rem;
 }
 
 a {
@@ -233,6 +236,7 @@ nav {
   font-size: 25px;
   display: none;
   color: var(--logoLight);
+  letter-spacing: .45rem;
 }
 
 .acrylicContainer:hover>a>#acrylicsText,
@@ -363,6 +367,12 @@ h1+img {
   padding: 0px;
   height: auto;
   float: center;
+}
+
+.bioContent>img {
+  height: 50vh;
+  width: auto;
+  float: left;
 }
 
 .bioContent>p {
