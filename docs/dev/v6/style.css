@@ -348,6 +348,14 @@ nav {
   object-fit: contain;
 }
 
+.portfolioContainer>img>.landscape {
+  margin: 0px auto;
+  max-width: 1000px;
+  width: 100%;
+  height: auto;
+  float: center;
+}
+
 h1+img {
   margin: 25px;
 }
