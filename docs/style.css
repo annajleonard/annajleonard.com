@@ -457,6 +457,12 @@ footer p {
     width: 100%;
     justify-content: space-around;
   }
+
+  .portfolioContainer>img {
+    height: auto;
+    width: 100%;
+  }
+
 }
 
 @media all and (max-width: 400px) {
