@@ -20,6 +20,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Helvetica, sans-serif;
+  letter-spacing: .45rem;
 }
 
 html,
@@ -225,13 +227,12 @@ nav {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: var(--darkBkd);
   padding: 15px;
   margin: 5px;
-  border: double 5px gray;
   font-size: 25px;
   display: none;
-  color: #000;
+  color: var(--logoLight);
 }
 
 .acrylicContainer:hover>a>#acrylicsText,
@@ -336,7 +337,6 @@ nav {
 }
 
 .portfolioContainer>img {
-  border: solid 2px #f1f1f1;
   margin: 0px auto;
   max-width: 1000px;
   height: 85vh;
