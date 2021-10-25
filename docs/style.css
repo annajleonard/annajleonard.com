@@ -153,6 +153,15 @@ nav {
   border-bottom: 3px solid var(--logoLight);
 }
 
+.bottom-nav {
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.bottom-nav a {
+  border-top: 3px solid var(--darkBkd);
+}
+
 #bioLogoContainer {
   max-width: 1000px;
   margin: auto;
@@ -348,6 +357,14 @@ nav {
   object-fit: contain;
 }
 
+.portfolioContainer>img.landscape {
+  margin: 0px auto;
+  max-width: 1000px;
+  width: 100%;
+  height: auto;
+  float: center;
+}
+
 h1+img {
   margin: 25px;
 }
@@ -433,7 +450,7 @@ footer p {
 @media (hover: none) {
   #acrylicsText,
   #mixedMediaText,
-  #coloredPencilText,
+  #colorPencilText,
   #collageText,
   #photographyText {
     display: block;
@@ -443,7 +460,7 @@ footer p {
 @media (max-width: 600px) {
   #acrylicsText,
   #mixedMediaText,
-  #coloredPencilText,
+  #colorPencilText,
   #collageText,
   #photographyText {
     display: block;
@@ -472,6 +489,10 @@ footer p {
   .navigation {
     width: 100%;
     justify-content: space-around;
+  }
+  
+  .bottom-nav .navigation {
+    flex-direction: column;
   }
 
   .bioContent>img,
