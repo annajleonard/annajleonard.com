@@ -480,6 +480,13 @@ footer p {
 
 }
 
+@media all and (max-width: 800px) {
+  .bioContent>img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 @media all and (max-width: 600px) {
   .nav-flex-container {
     flex-direction: column;
@@ -503,7 +510,6 @@ footer p {
     width: 100%;
     height: auto;
   }
-
 
   footer a {
     margin: 0px 25px 35px 0px;
