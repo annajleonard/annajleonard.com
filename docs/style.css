@@ -480,13 +480,6 @@ footer p {
 
 }
 
-@media all and (max-width: 800px) {
-  .bioContent>img {
-    width: 100%;
-    height: auto;
-  }
-}
-
 @media all and (max-width: 600px) {
   .nav-flex-container {
     flex-direction: column;
@@ -505,7 +498,12 @@ footer p {
     flex-direction: column;
   }
 
-  .bioContent>img,
+  .bioContent>img
+  {
+    width: 50%;
+    height: auto;
+  }
+
   .portfolioContainer>img {
     width: 100%;
     height: auto;
@@ -536,6 +534,12 @@ footer p {
 
   .navigation li:last-of-type a {
     border-bottom: none;
+  }
+
+  .bioContent>img
+  {
+    width: 100%;
+    height: auto;
   }
 
   footer a {
