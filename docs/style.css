@@ -153,6 +153,15 @@ nav {
   border-bottom: 3px solid var(--logoLight);
 }
 
+.bottom-nav {
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.bottom-nav a {
+  border-top: 3px solid var(--darkBkd);
+}
+
 #bioLogoContainer {
   max-width: 1000px;
   margin: auto;
@@ -480,6 +489,10 @@ footer p {
   .navigation {
     width: 100%;
     justify-content: space-around;
+  }
+  
+  .bottom-nav .navigation {
+    flex-direction: column;
   }
 
   .bioContent>img,
