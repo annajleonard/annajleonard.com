@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Bio Map</title>
+    <link rel="stylesheet" href="style.css"/>
+<!--    <script src="script.js"></script>-->
+    <script src="https://d3js.org/d3.v4.min.js"  charset="utf-8"></script>
+    <script src="data.js"  charset="utf-8" defer></script>
+    <script src="d3.js"  charset="utf-8" defer></script>
+</head>
+
+<body onload="onloadupdate()">
+<!-- <header>-->
+<!--    <div id="logo">D3</div>-->
+<!--    <nav>&ndash;&gt;-->
+<!--        <ul>-->
+<!--            <li><a href="/">Home</a></li>-->
+<!--            <li><a href="https://html-css-js.com/">HTML</a></li>-->
+<!--            <li><a href="https://html-css-js.com/css/code/">CSS</a></li>-->
+<!--            <li><a href="https://htmlcheatsheet.com/js/">JS</a></li>-->
+<!--        </ul>-->
+<!--    </nav>-->
+<!--</header> -->
+
+<section>
+    <label for="nHour" class="sliderlabel">
+        Hour = <span id="nHour-value">…</span>
+    </label>
+    <input type="range" min="18" max="42" id="nHour" class="sliderinput">
+    <br><br>
+    <div width="900" height="600" class="divbgimg"></div>
+</section>
+
+<!--<footer>-->
+<!--    <p>-->
+<!--        &copy;-->
+<!--        <a href="https://html5-templates.com/" target="_blank" rel="nofollow"-->
+<!--        >HTML5 Templates</a-->
+<!--        >-->
+<!--    </p>-->
+<!--    <address>Contact: <a href="mailto:">Mail me</a></address>-->
+<!--</footer>-->
+</body>
+</html>
